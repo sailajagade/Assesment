@@ -90,7 +90,7 @@ const EpisodesComponent = (props) => {
       hideArrows={state.hideArrows}
       hideSingleArrow={state.hideSingleArrow}
       clickWhenDrag={state.clickWhenDrag}
-      scrollBy={isMobileOnly ? 1 : 5}
+      scrollBy={isMobileOnly ? 1 : 6}
     />
   );
 };

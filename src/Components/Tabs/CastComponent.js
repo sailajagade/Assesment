@@ -80,7 +80,7 @@ const CastComponent = (props) => {
   const menu = menuItems;
   return (
     <ScrollMenu
-      scrollBy={isMobileOnly ? 1 : 5}
+      scrollBy={isMobileOnly ? 1 : 6}
       alignCenter={false}
       arrowLeft={ArrowLeft}
       arrowRight={ArrowRight}
