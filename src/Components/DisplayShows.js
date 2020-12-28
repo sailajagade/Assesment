@@ -84,7 +84,6 @@ class displayShows extends Component {
   }
   state = {
     mounted: true,
-    searchPosts: [],
     shows: [],
     showData: [],
     showName: "",
@@ -106,22 +105,11 @@ class displayShows extends Component {
     searchData.then((res) => {
       this.mounted &&
         this.setState({
-          shows: res.data,
-          searchPosts: res.data,
+          shows: res.data
         });
     });
   };
 
-  showAll = (currentPosts = {}) => {
-    this.props.history.push({
-      pathname: `/showAll`,
-      state: {
-        currentPosts: currentPosts,
-        onShowSelect: this.onShowSelect,
-        routeback: this.routeback,
-      },
-    });
-  };
   onShowSelect = async (event) => {
     this.props.history.push({
       pathname: `/showdetails/${event}`,
@@ -174,18 +162,7 @@ class displayShows extends Component {
                 <b> {genre} Shows </b>
               </h3>
             </div>
-            <div className="col-lg-1 col-4 more col-md-2">
-              <button
-                className="btn btn-link"
-                id="more"
-                onClick={() => {
-                  this.showAll(currentPosts);
-                }}
-              >
-                See All
-              </button>
-            </div>
-          </div>
+                     </div>
         )}
         {searchFlag && this.state.shows.length === 0 && (
           <div>

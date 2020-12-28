@@ -60,16 +60,6 @@ class displayShowDetailsContainer extends Component {
     });
     this.props.history.push({ pathname: "/" });
   };
-  showAll = (currentPosts = {}) => {
-    this.props.history.push({
-      pathname: `/showAll`,
-      state: {
-        currentPosts: currentPosts,
-        onShowSelect: this.onShowSelect,
-        routeback: this.routeback,
-      },
-    });
-  };
   render() {
     const { episodeData, castData, crewData, galleryData } = this.state;
     return (
@@ -82,7 +72,6 @@ class displayShowDetailsContainer extends Component {
           castData={castData}
           crewData={crewData}
           galleryData={galleryData}
-          showAll={this.showAll}
         />
       </div>
     );

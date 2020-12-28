@@ -148,10 +148,6 @@
       width: 140px;
       height:120px
     }
-    .showAll{
-      width: 120px;
-      height:120px;
-    }
     .show-margin
     {
       margin-left: 40px;
@@ -237,11 +233,6 @@
     {
       font-size: 15px;
     }
-    .showAll
-    {
-      width: 150px;
-      height:180px
-    }
     .show-margin
     {
       margin-left: 50px;
@@ -322,11 +313,6 @@ and (min-device-width : 1025px)
   .img{
     width: 180px;
     height:180px
-  }
-  .showAll
-  {
-    width: 180px!important;
-    height:180px!important;
   }
   .show-margin
   {

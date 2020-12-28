@@ -17,25 +17,6 @@ class SearchComponent extends Component {
       searchFlag: false,
     };
   }
-
-  fetchShows = () => {
-    let showsAll = fetchShow();
-    showsAll
-      .then((res) => {
-        this.setState(
-          {
-            shows: res.data,
-            searchFlag: false,
-            showDetails: false,
-          },
-          this.setGenreType
-        );
-      })
-      .catch((error) => {
-        console.log(error);
-      });
-  };
-
   onShowSearch = async (event) => {
     const { value } = event.target;
     this.setState({ showDetails: false, searchValue: value });

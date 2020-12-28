@@ -12,6 +12,6 @@ export function onSelect(id) {
   return getData(SHOW_SELECT + id);
 }
 export function onShowSearchData(value) {
-  let ans = getData(SEARCH_RESULTS + value);
-  return ans;
+  let data = getData(SEARCH_RESULTS + value);
+  return data;
 }

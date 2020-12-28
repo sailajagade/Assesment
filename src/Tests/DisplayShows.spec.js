@@ -25,15 +25,10 @@ describe("DisplayShows tests", () => {
       currentPosts={currentPosts}
       location={location}
       history={history}
-      showAll={jest.fn()}
     />
   );
   
   it("test for component mount()", () => {
-    expect(wrapper).toBeDefined();
-  });
-  it("test for showAll ()", () => {
-    wrapper.instance().showAll();
     expect(wrapper).toBeDefined();
   });
   it("test for onShowSelect ()", () => {
